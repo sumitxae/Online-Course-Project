@@ -17,15 +17,18 @@ In this assignment, the task was to implement the following features:
     https://github.com/sumitxae/Online-Course-Project.git
 
 2. Navigate to the project directory:
-    cd your_folder_name
+
+    `cd your_folder_name`
 
 3. Install dependencies:
-    npm install 
+
+    `npm install` 
 
 ## Usage
 
 To run the application, use the following command:
-    npm run dev
+
+    `npm run dev`
 
 
 Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
