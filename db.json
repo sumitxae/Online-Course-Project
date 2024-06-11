@@ -1,0 +1,437 @@
+{
+  "courses" : [
+    {
+      "id": 1,
+      "name": "Introduction to React Native",
+      "instructor": "John Doe",
+      "description": "Learn the basics of React Native development and build your first mobile app.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://example.com/image1.png",
+      "duration": "8 weeks",
+      "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+      "location": "Online",
+      "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to React Native",
+          "content": "Overview of React Native, setting up your development environment."
+        },
+        {
+          "week": 2,
+          "topic": "Building Your First App",
+          "content": "Creating a simple mobile app using React Native components."
+        },
+        {
+          "week": 3,
+          "topic": "Styling and Layout",
+          "content": "Applying styles and handling layout in React Native."
+        },
+        {
+          "week": 4,
+          "topic": "Navigation",
+          "content": "Implementing navigation in your React Native app."
+        },
+        {
+          "week": 5,
+          "topic": "State Management",
+          "content": "Managing state in React Native applications."
+        },
+        {
+          "week": 6,
+          "topic": "Networking",
+          "content": "Handling API requests and data fetching in React Native."
+        },
+        {
+          "week": 7,
+          "topic": "Testing",
+          "content": "Writing and running tests for your React Native app."
+        },
+        {
+          "week": 8,
+          "topic": "Deployment",
+          "content": "Deploying your React Native app to the App Store and Google Play."
+        }
+      ],
+      "students": [
+        {
+          "id": 101,
+          "name": "Alice Johnson",
+          "email": "alice@example.com"
+        },
+        {
+          "id": 102,
+          "name": "Bob Smith",
+          "email": "bob@example.com"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Advanced Python Programming",
+      "instructor": "Jane Smith",
+      "description": "Deep dive into advanced Python topics and applications.",
+      "enrollmentStatus": "Closed",
+      "thumbnail": "https://example.com/image2.png",
+      "duration": "10 weeks",
+      "schedule": "Mondays and Wednesdays, 7:00 PM - 9:00 PM",
+      "location": "Online",
+      "prerequisites": ["Intermediate Python knowledge"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Advanced Data Structures",
+          "content": "Exploring advanced data structures and their applications."
+        },
+        {
+          "week": 2,
+          "topic": "Concurrency and Parallelism",
+          "content": "Implementing concurrency and parallelism in Python applications."
+        },
+        {
+          "week": 3,
+          "topic": "Metaprogramming",
+          "content": "Understanding and applying metaprogramming in Python."
+        },
+        {
+          "week": 4,
+          "topic": "Decorators and Context Managers",
+          "content": "Creating and using decorators and context managers."
+        },
+        {
+          "week": 5,
+          "topic": "Networking",
+          "content": "Working with network programming in Python."
+        },
+        {
+          "week": 6,
+          "topic": "Asynchronous Programming",
+          "content": "Implementing asynchronous programming using asyncio."
+        },
+        {
+          "week": 7,
+          "topic": "Web Scraping",
+          "content": "Techniques and tools for web scraping with Python."
+        },
+        {
+          "week": 8,
+          "topic": "Testing and Debugging",
+          "content": "Effective testing and debugging strategies in Python."
+        },
+        {
+          "week": 9,
+          "topic": "Packaging and Distribution",
+          "content": "Packaging and distributing Python applications."
+        },
+        {
+          "week": 10,
+          "topic": "Advanced Libraries",
+          "content": "Exploring advanced Python libraries and frameworks."
+        }
+      ],
+      "students": [
+        {
+          "id": 103,
+          "name": "Charlie Brown",
+          "email": "charlie@example.com"
+        },
+        {
+          "id": 104,
+          "name": "Diana Prince",
+          "email": "diana@example.com"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Data Science with R",
+      "instructor": "Emily Davis",
+      "description": "Comprehensive guide to data science techniques using R.",
+      "enrollmentStatus": "In Progress",
+      "thumbnail": "https://example.com/image3.png",
+      "duration": "12 weeks",
+      "schedule": "Fridays, 4:00 PM - 7:00 PM",
+      "location": "Online",
+      "prerequisites": [
+        "Basic statistics knowledge",
+        "Basic programming knowledge"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Data Science",
+          "content": "Overview of data science, tools, and applications."
+        },
+        {
+          "week": 2,
+          "topic": "R Programming Basics",
+          "content": "Introduction to R programming language and its basics."
+        },
+        {
+          "week": 3,
+          "topic": "Data Manipulation",
+          "content": "Using dplyr and other packages for data manipulation."
+        },
+        {
+          "week": 4,
+          "topic": "Data Visualization",
+          "content": "Creating visualizations using ggplot2."
+        },
+        {
+          "week": 5,
+          "topic": "Exploratory Data Analysis",
+          "content": "Techniques for exploring and analyzing data."
+        },
+        {
+          "week": 6,
+          "topic": "Statistical Inference",
+          "content": "Understanding statistical inference and hypothesis testing."
+        },
+        {
+          "week": 7,
+          "topic": "Linear Regression",
+          "content": "Building and interpreting linear regression models."
+        },
+        {
+          "week": 8,
+          "topic": "Classification",
+          "content": "Implementing classification algorithms."
+        },
+        {
+          "week": 9,
+          "topic": "Clustering",
+          "content": "Applying clustering techniques to group data."
+        },
+        {
+          "week": 10,
+          "topic": "Time Series Analysis",
+          "content": "Analyzing time series data and forecasting."
+        },
+        {
+          "week": 11,
+          "topic": "Machine Learning",
+          "content": "Introduction to machine learning with R."
+        },
+        {
+          "week": 12,
+          "topic": "Final Project",
+          "content": "Working on a comprehensive data science project."
+        }
+      ],
+      "students": [
+        {
+          "id": 105,
+          "name": "Eve White",
+          "email": "eve@example.com"
+        },
+        {
+          "id": 106,
+          "name": "Frank Green",
+          "email": "frank@example.com"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Web Development with HTML, CSS, and JavaScript",
+      "instructor": "Michael Thompson",
+      "description": "Learn to build responsive websites using HTML, CSS, and JavaScript.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://example.com/image4.png",
+      "duration": "8 weeks",
+      "schedule": "Wednesdays and Fridays, 5:00 PM - 7:00 PM",
+      "location": "Online",
+      "prerequisites": ["Basic computer knowledge"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Web Development",
+          "content": "Overview of web development and setting up the environment."
+        },
+        {
+          "week": 2,
+          "topic": "HTML Basics",
+          "content": "Learning HTML structure, elements, and tags."
+        },
+        {
+          "week": 3,
+          "topic": "CSS Fundamentals",
+          "content": "Applying styles with CSS, understanding selectors and properties."
+        },
+        {
+          "week": 4,
+          "topic": "Responsive Design",
+          "content": "Creating responsive layouts with CSS media queries."
+        },
+        {
+          "week": 5,
+          "topic": "JavaScript Basics",
+          "content": "Introduction to JavaScript programming."
+        },
+        {
+          "week": 6,
+          "topic": "DOM Manipulation",
+          "content": "Manipulating the Document Object Model (DOM) with JavaScript."
+        },
+        {
+          "week": 7,
+          "topic": "Events and Interactivity",
+          "content": "Handling events and adding interactivity to web pages."
+        },
+        {
+          "week": 8,
+          "topic": "Project",
+          "content": "Building a complete web project using HTML, CSS, and JavaScript."
+        }
+      ],
+      "students": [
+        {
+          "id": 107,
+          "name": "Grace Lee",
+          "email": "grace@example.com"
+        },
+        {
+          "id": 108,
+          "name": "Hank Miller",
+          "email": "hank@example.com"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Introduction to Machine Learning",
+      "instructor": "Sarah Johnson",
+      "description": "Get started with machine learning concepts and techniques.",
+      "enrollmentStatus": "Closed",
+      "thumbnail": "https://example.com/image5.png",
+      "duration": "10 weeks",
+      "schedule": "Mondays, 6:00 PM - 9:00 PM",
+      "location": "Online",
+      "prerequisites": [
+        "Basic programming knowledge",
+        "Basic statistics knowledge"
+      ],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Machine Learning",
+          "content": "Overview of machine learning, its applications and types."
+        },
+        {
+          "week": 2,
+          "topic": "Data Preprocessing",
+          "content": "Techniques for data cleaning and preprocessing."
+        },
+        {
+          "week": 3,
+          "topic": "Supervised Learning",
+          "content": "Introduction to supervised learning algorithms."
+        },
+        {
+          "week": 4,
+          "topic": "Unsupervised Learning",
+          "content": "Introduction to unsupervised learning algorithms."
+        },
+        {
+          "week": 5,
+          "topic": "Model Evaluation",
+          "content": "Evaluating machine learning models."
+        },
+        {
+          "week": 6,
+          "topic": "Feature Engineering",
+          "content": "Techniques for feature extraction and selection."
+        },
+        {
+          "week": 7,
+          "topic": "Neural Networks",
+          "content": "Introduction to neural networks and deep learning."
+        },
+        {
+          "week": 8,
+          "topic": "Natural Language Processing",
+          "content": "Basics of natural language processing with machine learning."
+        },
+        {
+          "week": 9,
+          "topic": "Model Deployment",
+          "content": "Deploying machine learning models in production."
+        },
+        {
+          "week": 10,
+          "topic": "Capstone Project",
+          "content": "Working on a comprehensive machine learning project."
+        }
+      ],
+      "students": [
+        {
+          "id": 109,
+          "name": "Ian Scott",
+          "email": "ian@example.com"
+        },
+        {
+          "id": 110,
+          "name": "Jenny Clark",
+          "email": "jenny@example.com"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Digital Marketing Basics",
+      "instructor": "Mark Williams",
+      "description": "Learn the fundamentals of digital marketing and online strategies.",
+      "enrollmentStatus": "Open",
+      "thumbnail": "https://example.com/image6.png",
+      "duration": "6 weeks",
+      "schedule": "Thursdays, 5:00 PM - 7:00 PM",
+      "location": "Online",
+      "prerequisites": ["Basic computer knowledge"],
+      "syllabus": [
+        {
+          "week": 1,
+          "topic": "Introduction to Digital Marketing",
+          "content": "Overview of digital marketing and its importance."
+        },
+        {
+          "week": 2,
+          "topic": "SEO Basics",
+          "content": "Understanding search engine optimization (SEO) techniques."
+        },
+        {
+          "week": 3,
+          "topic": "Social Media Marketing",
+          "content": "Using social media platforms for marketing."
+        },
+        {
+          "week": 4,
+          "topic": "Content Marketing",
+          "content": "Creating and promoting valuable content."
+        },
+        {
+          "week": 5,
+          "topic": "Email Marketing",
+          "content": "Strategies for effective email marketing campaigns."
+        },
+        {
+          "week": 6,
+          "topic": "Analytics and Reporting",
+          "content": "Using analytics tools to measure and improve performance."
+        }
+      ],
+      "students": [
+        {
+          "id": 111,
+          "name": "Karen White",
+          "email": "karen@example.com"
+        },
+        {
+          "id": 112,
+          "name": "Leo Turner",
+          "email": "leo@example.com"
+        }
+      ]
+    }
+  ]
+  
+}
