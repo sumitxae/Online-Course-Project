@@ -29,6 +29,7 @@ const Course = ({
       toast.error(err.message);
     } finally {
       setload(false);
+      toast.success("Course marked as complete");
     }
   };
   return (
