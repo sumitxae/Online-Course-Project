@@ -1,17 +1,32 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
 import Course from "./Course";
-import { useSelector } from "react-redux";
-import { set } from "firebase/database";
+import { useDispatch, useSelector } from "react-redux";
+import ClipLoader from "react-spinners/ClipLoader";
+import { getCourses } from "../store/actions/courseAction";
 
 const List = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCourses());
+  }, [dispatch]);
+
   const cluster = useSelector((state) => state.courseSlice.courses);
-  const [courses, setCourses] = useState(cluster);
-  const [input, setinput] = useState("");
-  console.log(cluster)
+  const [courses, setCourses] = useState([]);
+  const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (cluster.length > 0) {
+      setCourses(cluster);
+      setLoading(false);
+    }
+  }, [cluster]);
+
   const changeHandler = (event) => {
     const inputValue = event.target.value;
-    setinput(inputValue);
+    setInput(inputValue);
     if (inputValue === "") {
       setCourses(cluster);
     }
@@ -19,7 +34,7 @@ const List = () => {
 
   const searchHandler = () => {
     const lowercasedInput = input.toLowerCase();
-    const filtered = courses.filter(
+    const filtered = cluster.filter(
       (course) =>
         course.name.toLowerCase().includes(lowercasedInput) ||
         course.instructor.toLowerCase().includes(lowercasedInput)
@@ -27,17 +42,13 @@ const List = () => {
     setCourses(filtered);
   };
 
-  useEffect(() => {
-    setCourses(cluster);
-    console.log(courses)
-  }, [cluster]);
   return (
     <div className="bg-[#000000] min-h-screen">
       <Nav />
       <div className="w-3/4 mx-auto lg:w-3/4">
         <h1 className="text-3xl text-center mt-10 mb-8 text-[#F7F9FA] font-semibold lg:text-5xl">
           What would You like to{" "}
-          <span className="text-[#6E96CF]"> Learn ?</span>
+          <span className="text-[#6E96CF]">Learn?</span>
         </h1>
         <div className="flex justify-center mb-8">
           <input
@@ -55,18 +66,30 @@ const List = () => {
           </button>
         </div>
         <div className="w-full overflow-x-hidden gap-4 flex flex-wrap justify-center">
-          {courses.map((course, index) => (
-            <Course
-              key={index}
-              id={course._id}
-              page="list"
-              title={course.name}
-              instructor={course.instructor}
-              thumbnail={course.thumbnail}
-              dueDate={course.duration}
-              progress={course.progress || 0} // Assuming progress is a field in your data
-            />
-          ))}
+          {loading ? (
+            <div className="h-[20vh] text-white w-screen flex items-center justify-center">
+              <h1 className="text-3xl font-semibold">
+                <ClipLoader color="#e5eff3" />
+              </h1>
+            </div>
+          ) : courses.length > 0 ? (
+            courses.map((course, index) => (
+              <Course
+                key={index}
+                id={course._id}
+                page="list"
+                title={course.name}
+                instructor={course.instructor}
+                thumbnail={course.thumbnail}
+                dueDate={course.duration}
+                progress={course.progress || 0}
+              />
+            ))
+          ) : (
+            <div className="h-[20vh] text-white w-screen flex items-center justify-center">
+              <h1 className="text-3xl font-semibold">No courses found</h1>
+            </div>
+          )}
         </div>
       </div>
     </div>
