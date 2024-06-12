@@ -8,7 +8,7 @@ const List = () => {
   const cluster = useSelector((state) => state.courseSlice.courses);
   const [courses, setCourses] = useState(cluster);
   const [input, setinput] = useState("");
-
+  console.log(cluster)
   const changeHandler = (event) => {
     const inputValue = event.target.value;
     setinput(inputValue);
@@ -29,6 +29,7 @@ const List = () => {
 
   useEffect(() => {
     setCourses(cluster);
+    console.log(courses)
   }, [cluster]);
   return (
     <div className="bg-[#000000] min-h-screen">
